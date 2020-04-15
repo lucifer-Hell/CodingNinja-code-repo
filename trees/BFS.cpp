@@ -47,6 +47,8 @@ void print(int **edges,int v,int sv){
             printBFS(edges,v,i,visited);
         }
     }
+    // free memory
+    delete [] visited ;
 
 }
 
@@ -83,7 +85,7 @@ int main(){
     print(edges,v,0);
 
 
-
+    delete [] edges;
 
 
 }
